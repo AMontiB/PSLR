@@ -7,7 +7,7 @@ UNDER COMPLEX LENS DISTORTION CORRECTION"](https://ieeexplore.ieee.org/abstract/
 
 - Download the python libraries of [Camera-fingerprint](https://dde.binghamton.edu/download/camera_fingerprint/) ;
  - if [Camera-fingerprint](https://dde.binghamton.edu/download/camera_fingerprint/) is not already, reorganize the folders such that ```PRNU/CameraFingerprint``` ;
- - Download the Reference Camera Fingerprints [here](https://drive.google.com/drive/folders/1q6FpTvP5FYsgaQf5kbC3vjuT6s8jbmxs?usp=sharing);
+ - Download the Reference Camera Fingerprints [here](https://drive.google.com/drive/folders/1SmTu0IoGCSEWFMNOYfrMtXtCg2DznggN?usp=sharing);
  - at least 9G GPU.
 ## Set up Virtual-Env
 ```
@@ -18,27 +18,29 @@ conda env create -f environment.yml
 
 ## Test a match (H1) hypothesis case
 ```
-nohup python -u main_H1.py --videos PATH_TO_VIDEOS --fingerprint PATH_TO_FINGERPRINTS --output PATH_TO_OUTPUT_FOLDER --gpu_dev /gpu:N >| output_H1.log & 
+python -u main_OFF_H1.py
+```
+
+## Test a match (H1) hypothesis case on CPU
+```
+python -u main_OFF_H1_cpu.py
 ```
 
 ## Test a mis-match (H0) hypothesis case
 ```
-nohup python -u main_H0.py --videos PATH_TO_VIDEOS --fingerprint PATH_TO_FINGERPRINTS --output PATH_TO_OUTPUT_FOLDER --gpu_dev /gpu:N >| output_H0.log & 
+python -u main_OFF_H0.py
 ```
 
-## Run both
-Edit and Run ```bash runner.sh```
-
 ## NOTE:
-You need to edit:
-- ```PATH_TO_VIDEOS``` changing it with the path to your dataset
-- ```PATH_TO_FINGERPRINTS``` changing it with the path to your reference camera fingerprints
-- ```PATH_TO_OUTPUT_FOLDER``` changing it with the path to your output folder
-- ```N``` chaging it with your GPU ID
+You need to edit in ```main_OFF_H1.py```, ```main_OFF_H1_cpu.py``` and ```main_OFF_H0.py```:
+- ```Fingeprint_list``` changing it with the path to your Camera Fingerprints
+- ```images_set``` changing it with the path to the test images corresponding to your Camera Fingerprint
+- ```outfile_name``` changing it with your output file name
 
 # Results of the Paper
 
-Check ["GPU-accelerated SIFT-aided source identification of stabilized videos"](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C0v9f-cAAAAJ&citation_for_view=C0v9f-cAAAAJ:UeHWp8X0CEIC)
+Check ["EXPLOITING PRNU AND LINEAR PATTERNS IN FORENSIC CAMERA ATTRIBUTION
+UNDER COMPLEX LENS DISTORTION CORRECTION"](https://ieeexplore.ieee.org/abstract/document/10096605)
 
 <p align="center">
   <img src="https://github.com/AMontiB/GPU-PRNU-SIFT/blob/main/figures/ROC.png">
