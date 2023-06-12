@@ -6,7 +6,7 @@ UNDER COMPLEX LENS DISTORTION CORRECTION"](https://ieeexplore.ieee.org/abstract/
 ## Requirements
 
 - Download the python libraries of [Camera-fingerprint](https://dde.binghamton.edu/download/camera_fingerprint/) ;
- - if [Camera-fingerprint](https://dde.binghamton.edu/download/camera_fingerprint/) is not already, reorganize the folders such that ```PRNU/CameraFingerprint``` ;
+ - if [Camera-fingerprint](https://dde.binghamton.edu/download/camera_fingerprint/) is not already, reorganize the folders such that ```CameraFingerprint_python/CameraFingerprint/``` ;
  - Download the Reference Camera Fingerprints [here](https://drive.google.com/drive/folders/1SmTu0IoGCSEWFMNOYfrMtXtCg2DznggN?usp=sharing);
  - at least 9G GPU.
 ## Set up Virtual-Env
