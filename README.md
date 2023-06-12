@@ -16,17 +16,17 @@ conda env create -f environment.yml
 
 # Test
 
-## Test a match (H1) hypothesis case
+## Test PSLR for match (H1) hypothesis cases
 ```
 python -u main_OFF_H1.py
 ```
 
-## Test a match (H1) hypothesis case on CPU
+## Test PSLR for match (H1) hypothesis cases on CPU
 ```
 python -u main_OFF_H1_cpu.py
 ```
 
-## Test a mis-match (H0) hypothesis case
+## Test PSLR for mis-match (H0) hypothesis cases
 ```
 python -u main_OFF_H0.py
 ```
