@@ -43,10 +43,10 @@ Check ["EXPLOITING PRNU AND LINEAR PATTERNS IN FORENSIC CAMERA ATTRIBUTION
 UNDER COMPLEX LENS DISTORTION CORRECTION"](https://ieeexplore.ieee.org/abstract/document/10096605)
 
 <p align="center">
-  <img src="https://github.com/AMontiB/GPU-PRNU-SIFT/blob/main/figures/ROC.png">
+  <img src="https://github.com/AMontiB/PSLR/blob/main/figs/ROCs.png">
 </p>
 
-![tables](https://github.com/AMontiB/GPU-PRNU-SIFT/blob/main/figures/table.png?raw=true)
+![tables](https://github.com/AMontiB/PSLR/blob/main/figs/Table.png?raw=true)
 
 # Cite Us
 If you use this code please cite: 
